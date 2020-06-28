@@ -5,7 +5,6 @@ using UnityEngine;
 public class FloorgroundMove : MonoBehaviour
 {
     private Transform player;
-    [SerializeField] Transform floor;
 
     void Start()
     {
@@ -14,6 +13,6 @@ public class FloorgroundMove : MonoBehaviour
 
     void Update()
     {
-        this.transform.position = new Vector3(transform.position.x, player.transform.position.y - 5, player.transform.position.z + 55);
+        this.transform.position = new Vector3(transform.position.x, player.transform.position.y - 4.55f, player.transform.position.z + 55);
     }
 }
